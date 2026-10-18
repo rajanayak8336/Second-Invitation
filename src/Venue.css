@@ -1,0 +1,333 @@
+/* =========================================================
+   VENUE SECTION
+========================================================= */
+
+.venue-section {
+  padding: 85px 20px;
+  background: #f8efdf;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.venue-container {
+  width: min(100%, 700px);
+}
+
+/* Keep the venue heading in the section's Georgia style. */
+.venue-section .section-heading,
+.venue-section .section-heading > span,
+.venue-section .section-heading h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: normal;
+}
+
+/* =========================================================
+   DEFAULT VENUE FONT
+========================================================= */
+
+.venue-section,
+.venue-section *,
+.venue-section button,
+.venue-section a,
+.venue-section input,
+.venue-section textarea {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* =========================================================
+   VENUE DETAILS
+========================================================= */
+
+.venue-details {
+  margin-top: 25px;
+}
+
+.venue-name {
+  font-size: 24px;
+  margin-bottom: 7px;
+}
+
+.venue-details > p:not(.venue-name) {
+  font-size: 15px;
+}
+
+/* =========================================================
+   MAP DIRECTIONS BUTTON
+========================================================= */
+
+.direction-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 20px;
+  padding: 12px 22px;
+
+  border: 1px solid var(--brown);
+  background: var(--brown);
+  color: white;
+
+  text-decoration: none;
+  font-size: 13px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.direction-button:hover {
+  background: transparent;
+  color: var(--brown);
+  transform: translateY(-2px);
+}
+
+.direction-button span {
+  font-size: 16px;
+}
+
+/* =========================================================
+   COUNTDOWN
+   Elegant Wedding Font
+========================================================= */
+
+.countdown-panel {
+  max-width: 550px;
+  margin: 35px auto;
+  padding: 25px 15px;
+
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+
+  /*
+     Elegant serif font for countdown.
+     This gives a premium wedding invitation look.
+  */
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* Countdown font override */
+
+.countdown-panel,
+.countdown-panel *,
+.countdown-panel strong,
+.countdown-panel span,
+.countdown-panel small {
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* =========================================================
+   COUNTDOWN TITLE
+========================================================= */
+
+.countdown-panel > p {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   COUNTDOWN GRID
+========================================================= */
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  margin: 20px 0;
+}
+
+/* =========================================================
+   COUNTDOWN ITEM
+========================================================= */
+
+.countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 5px;
+
+  font-family: "Cormorant Garamond", Georgia, serif;
+}
+
+/* =========================================================
+   COUNTDOWN NUMBERS
+========================================================= */
+
+.countdown-item strong {
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 38px;
+  font-weight: 500;
+
+  line-height: 1;
+
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   COUNTDOWN LABELS
+========================================================= */
+
+.countdown-item span {
+  font-family: "Cormorant Garamond", Georgia, serif;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+
+  line-height: 1;
+}
+
+/* =========================================================
+   WARM REGARDS
+========================================================= */
+
+.warm-regards {
+  margin-top: 45px;
+}
+
+.warm-regards > span {
+  display: block;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 5vw, 30px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+.warm-regards h3 {
+  margin: 10px 0 20px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(18px, 5vw, 30px);
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.warm-regards p {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  line-height: 1.8;
+  font-style: normal;
+}
+
+.family-message,
+.family-presence {
+  font-family: "Monotype Corsiva", "Apple Chancery", cursive;
+  font-size: clamp(18px, 2.6vw, 23px);
+  font-style: normal;
+  line-height: 1.5;
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  .venue-section {
+    padding: 70px 18px;
+  }
+
+  .venue-name {
+    font-size: 21px;
+  }
+
+  /* Countdown */
+
+  .countdown-panel {
+    margin: 30px auto;
+    padding: 22px 8px;
+  }
+
+  .countdown-panel > p {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+
+  .countdown-grid {
+    gap: 4px;
+    margin: 18px 0;
+  }
+
+  .countdown-item {
+    gap: 6px;
+  }
+
+  .countdown-item strong {
+    font-size: 30px;
+    letter-spacing: 0.5px;
+  }
+
+  .countdown-item span {
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  /* Family message */
+
+  .warm-regards {
+    margin-top: 40px;
+  }
+
+  .warm-regards p {
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .family-message,
+  .family-presence {
+    font-size: clamp(17px, 4.6vw, 21px);
+  }
+}
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .venue-section {
+    padding: 60px 14px;
+  }
+
+  .countdown-panel {
+    padding: 20px 5px;
+  }
+
+  .countdown-grid {
+    gap: 2px;
+  }
+
+  .countdown-item strong {
+    font-size: 27px;
+  }
+
+  .countdown-item span {
+    font-size: 9px;
+    letter-spacing: 0.7px;
+  }
+
+  .countdown-panel > p {
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+}
